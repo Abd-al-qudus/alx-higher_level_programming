@@ -3,9 +3,10 @@ if __name__ == "__main__":
     import sys
     length = len(sys.argv) - 1
     if length == 0:
-        print(f"{length} arguments.")
+        print("{} arguments.".format(length))
     elif length == 1:
-        print(f"{length} argument:\n {length}: {sys.argv[length]}")
+        print("{} argument:".format(length))
+	print("{}: {}".format(length, sys.argv[length]))
     else:
         print(f"{length} arguments")
         for i in range(1, length + 1):
