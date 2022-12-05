@@ -10,4 +10,4 @@ def delete_at(my_list=[], idx=0):
             new = my_list[:]
             return new
     else:
-        return my_list
+        return None
