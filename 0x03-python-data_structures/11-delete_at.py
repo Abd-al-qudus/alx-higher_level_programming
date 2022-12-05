@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def delete_at(my_list=[], idx=0):
-    if my_list and idx:
+    if my_list or idx:
         if idx < 0:
             return my_list
         elif idx >= len(my_list):
@@ -10,4 +10,4 @@ def delete_at(my_list=[], idx=0):
             new = my_list[:]
             return new
     else:
-        return None
+        return my_list
