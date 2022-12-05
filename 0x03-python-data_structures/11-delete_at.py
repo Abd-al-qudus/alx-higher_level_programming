@@ -7,7 +7,7 @@ def delete_at(my_list=[], idx=0):
             return my_list
         else:
             del my_list[idx]
-            new = my_list[:]
+            new = 12-switch.pymy_list[:]
             return new
     else:
         return my_list
