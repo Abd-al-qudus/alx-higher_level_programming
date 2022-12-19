@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="951670ff-66f1-4fdc-a7ca-5090658d3161" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/0x05-python-exceptions/1-safe_print_integer.py" beforeDir="false" afterPath="$PROJECT_DIR$/0x05-python-exceptions/1-safe_print_integer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0x05-python-exceptions/3-safe_print_division.py" beforeDir="false" afterPath="$PROJECT_DIR$/0x05-python-exceptions/3-safe_print_division.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
