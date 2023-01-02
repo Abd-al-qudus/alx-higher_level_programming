@@ -8,8 +8,8 @@
 
 class Rectangle:
     """The class attribute primarily contain getters and
-    setters for the rectangle properties
-    """
+    setters for the rectangle properties, it computes the
+    area and perimeter"""
 
     def __init__(self, width=0, height=0):
         self.width = width
@@ -38,3 +38,13 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
+    def area(self):
+        area = self.width * self.height
+        return area
+
+    def perimeter(self):
+        if self.width == 0 or self.height == 0:
+            return 0
+        perimeter = 2 * (self.width + self.height)
+        return perimeter
