@@ -1,0 +1,55 @@
+******************************************************
+This program takes an argument and print a # pattern
+******************************************************
+
+```Usage: print_square(size)```
+
+#Test cases
+
+```Works fine with integers```
+::
+    >>> print_square = __import__('4-print_square').print_square
+    >>> print_square(10)
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+
+``` Handle inf ,Nan or None
+    >>> print_square(float('inf'))
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+    >>> print_square(None)
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+```Handle negative Numbers```
+    >>> print_square(-3)
+    Traceback (most recent call last):
+    ...
+    ValueError: size must be >= 0
+
+    >>> print_square(0.5)
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+```Handle invalid inputs```
+    >>> print_square("johnny")
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+    >>> print_square({})
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer

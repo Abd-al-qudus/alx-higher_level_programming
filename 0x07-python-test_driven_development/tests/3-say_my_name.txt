@@ -1,0 +1,25 @@
+*************************************************************************
+This program takes two arguments and print a welcome message to the user
+*************************************************************************
+
+```Usage: say_my_name(first_name, last_name)```
+
+#Test Cases
+```Works with strings```
+::
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+    >>> say_my_name("Jane", "Dull")
+    My name is Jane Dull
+
+    >>> say_my_name("William", "Smith")
+    My name is William Smith
+
+    >>> say_my_name(None)
+    Traceback (most recent call last):
+    ...
+    TypeError: first_name must be a string
+
+    >>> say_my_name("Bull", 188)
+    Traceback (most recent call last):
+    ...
+    TypeError: last_name must be a string

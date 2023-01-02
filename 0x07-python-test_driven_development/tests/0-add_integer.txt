@@ -1,0 +1,50 @@
+********************************************************
+The add_integer module takes two integer or float as arguments,
+cast and add them, then return the result
+********************************************************
+
+```Usage: add_integer(a, b)```
+
+*Test cases*
+```works fine on integers```
+::
+    >>> add_integer = __import__('0-add_integer').add_integer
+    >>> add_integer(2, 5)
+    7
+
+    >>> add_integer(4.0, -19.0)
+    -15
+
+```it also works when one argument is specified```
+
+    >>> add_integer(12)
+    110
+
+```Raises exception on invalid input types```
+
+    >>> add_integer("let me fail", 10)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+    >>> add_integer(19, "i am not an int")
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+    >>> add_integer(None)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+```Fails on relatively large numbers and NaN
+
+    >>> add_integer(float('inf'), 4)
+    Traceback (most recent call last):
+    ...
+    OverflowError: cannot convert float infinity to integer
+
+    >>> add_integer(2, float('nan'))
+    Traceback (most recent call last):
+    ...
+    ValueError: cannot convert float NaN to integer
