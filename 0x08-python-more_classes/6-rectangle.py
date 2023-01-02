@@ -11,12 +11,12 @@ class Rectangle:
     setters for the rectangle properties, it computes the
     area and perimeter and has the printable str implementation"""
 
-    number_of_instance = 0
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
-        self.number_of_instance += 1
+        self.number_of_instances += 1
 
     @property
     def width(self):
@@ -70,5 +70,5 @@ class Rectangle:
         return rect
 
     def __del__(self):
-        type(self).number_of_instance -= 1
+        type(self).number_of_instances -= 1
         print('Bye rectangle...')
