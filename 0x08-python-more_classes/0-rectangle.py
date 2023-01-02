@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module creates an lazy rectangle class"""
+"""This module creates a lazy rectangle class"""
 
 
 class Rectangle:
