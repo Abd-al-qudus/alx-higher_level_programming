@@ -60,4 +60,3 @@ class Rectangle:
             if i < self.height - 1:
                 rep.append('\n')
         return "".join(rep)
-
