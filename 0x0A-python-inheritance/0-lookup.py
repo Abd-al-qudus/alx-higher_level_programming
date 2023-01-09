@@ -1,4 +1,4 @@
-#!/usr/bin/pytohn3
+#!/usr/bin/python3
 
 """This lookup function return the list of
     available attributes of a python class"""
