@@ -1,18 +1,15 @@
 #!/usr/bin/python3
-
-"""This function inherit from built-in list
-    """
+"""
+contains the MyList class
+"""
 
 
 class MyList(list):
-    """My list class
-    """
-
+    """a subclass of list"""
     def __init__(self):
-        """initialize the class attributes"""
+        """initializes the object"""
         super().__init__()
 
     def print_sorted(self):
-        """print the list elements in sorted order
-        """
+        """prints the sorted list"""
         print(sorted(self))
