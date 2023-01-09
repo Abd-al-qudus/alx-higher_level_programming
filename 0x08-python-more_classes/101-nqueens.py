@@ -25,7 +25,7 @@ def init_board(n):
     board = []
     [board.append([]) for i in range(n)]
     [row.append(' ') for i in range(n) for row in board]
-    return (board)
+    return board
 
 
 def board_deepcopy(board):
