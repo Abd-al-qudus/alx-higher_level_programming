@@ -8,4 +8,3 @@ def read_file(filename=""):
     with open(filename, encoding="utf-8") as fob:
         file = fob.read()
         print(file)
-    fob.close()
