@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="951670ff-66f1-4fdc-a7ca-5090658d3161" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0x0A-python-inheritance/0-lookup.py" beforeDir="false" afterPath="$PROJECT_DIR$/0x0A-python-inheritance/0-lookup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0x0A-python-inheritance/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/0x0A-python-inheritance/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
