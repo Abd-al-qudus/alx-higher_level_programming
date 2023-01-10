@@ -5,7 +5,7 @@
 
 def read_file(filename=""):
     """opens a file and print to stdout"""
-    with open(filename, "r", encoding="utf-8") as fob:
+    with open(filename, encoding="utf-8") as fob:
         file = fob.read()
         print(file)
     fob.close()
