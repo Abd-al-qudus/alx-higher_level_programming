@@ -87,8 +87,8 @@ class Rectangle(Base):
 
     def __str__(self):
         """override the string representation of rectangle class"""
-        return str(self.__class__.__name__) + f" ({self.id}) " + f"{self.x}/{self.y}" \
-            + " - " + f"{self.width}/{self.height}"
+        return str(self.__class__.__name__) + f" ({self.id}) "\
+            + f"{self.x}/{self.y}" + " - " + f"{self.width}/{self.height}"
 
     def update(self, *args, **kwargs):
         """update the args with their corresponding setter"""
