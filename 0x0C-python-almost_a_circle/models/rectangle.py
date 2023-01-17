@@ -119,4 +119,3 @@ class Rectangle(Base):
                     self.x = v
                 elif k == "y":
                     self.y = v
-   
