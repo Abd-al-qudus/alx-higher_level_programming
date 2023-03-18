@@ -9,7 +9,8 @@ if __name__ == '__main__':
     if len(sys.argv) != 5:
         print("Usage: <module> <username> <password> <database name> <search>")
     else:
-        db = MySQLdb.connect(host="localhost", port=3306, user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
+        db = MySQLdb.connect(host="localhost", port=3306, user=sys.argv[1],
+                             passwd=sys.argv[2], db=sys.argv[3])
         cursor = db.cursor()
         query = "SELECT * FROM states WHERE name LIKE %s ORDER BY id ASC"
         search = f"%{sys.argv[4]}%"
