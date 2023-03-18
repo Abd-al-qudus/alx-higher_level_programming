@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+
+"""This module list all states from the sql database and
+    prints out the states that matches the searched state"""
+
 import MySQLdb
 import sys
 
