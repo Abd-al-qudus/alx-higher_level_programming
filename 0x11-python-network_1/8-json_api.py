@@ -9,11 +9,9 @@ if __name__ == '__main__':
     import sys
     import requests
 
-    q = ''
     url = 'http://0.0.0.0:5000/search_user'
-    if sys.argv[1]:
-        q = sys.argv[1]
-    response = requests.post(url, data={'q': q})
+    arg = "" if not sys.argv[1] else sys.argv[1]
+    response = requests.post(url, data={'q': arg})
     try:
         response = response.json()
         if response == {}:
