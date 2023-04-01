@@ -13,8 +13,10 @@ if __name__ == '__main__':
     else:
         owner = sys.argv[2]
         username = sys.argv[1]
-        url = f'https://api.github.com/repos/{owner}/{username}/commits?per_page=10'
+        url = f'https://api.github.com/repos/{owner}/' \
+              f'{username}/commits?per_page=10'
         response = requests.get(url)
         for resp in response.json():
             print('{}: {}'.format(resp.get('sha'),
-                                  resp.get('commit').get('author').get('name')))
+                                  resp.get('commit').
+                                  get('author').get('name')))
