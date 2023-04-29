@@ -4,17 +4,15 @@ const API = process.argv[2];
 request(API, function (error, response, body) {
   if (error) {
     console.log(error);
-  } 
-  else {
+  } else {
     const totalTasks = JSON.parse(body);
     const completed = {};
-    for (const item in totalTasks){
+    for (const item in totalTasks) {
       const task = totalTasks[item];
-      if (task.completed){
-        if (completed[task.userId]){
+      if (task.completed) {
+        if (completed[task.userId]) {
           completed[task.userId]++;
-        }
-        else {
+        } else {
           completed[task.userId] = 1;
         }
       }
