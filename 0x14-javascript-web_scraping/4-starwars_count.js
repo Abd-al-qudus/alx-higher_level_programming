@@ -1,4 +1,4 @@
-#!usr/bin/node
+#!/usr/bin/node
 const request = require('request');
 const API = process.argv[2];
 request.get(API, function (error, response, body) {
