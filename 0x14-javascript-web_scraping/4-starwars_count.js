@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const request = require('request');
 const API = process.argv[2];
-request(API, function (error, response, body) {
+request.get(API, function (error, response, body) {
   if (error) {
     console.log(error);
   } else {

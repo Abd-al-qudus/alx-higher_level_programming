@@ -3,4 +3,4 @@ const request = require('request');
 const fs = require('fs');
 const API = process.argv[2];
 const fileName = process.argv[3];
-request(API).pipe(fs.createWriteStream(fileName));
+request.get(API).pipe(fs.createWriteStream(fileName));
